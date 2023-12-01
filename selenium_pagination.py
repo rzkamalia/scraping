@@ -43,5 +43,5 @@ while current_page <= last_page:
 driver.quit() # for close chrome
 
 df = pd.DataFrame({'title': book_title, 'author': book_author})
-df.to_csv(f'books_pagination.csv', index = False)
-print(f'process done, books_pagination.csv created')
+df.to_csv(f'selenium_books_pagination.csv', index = False)
+print(f'process done, selenium_books_pagination.csv created')

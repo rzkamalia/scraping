@@ -27,4 +27,4 @@ for match in matches:
 driver.quit() # for close chrome
 
 df = pd.DataFrame({'date': date, 'home_team': home_team, 'score': score, 'away_team': away_team})
-df.to_csv('football_data.csv', index = False)
+df.to_csv('selenium_football_data.csv', index = False)
