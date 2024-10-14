@@ -16,7 +16,7 @@ class ThirdProjectSpider(CrawlSpider):
 
     def parse_item(self, response):
         article = response.xpath('//article[@class = "main-article"]')
-        time.sleep(0.5) # if we dont add sleep, only first page that will scraped
+        time.sleep(1) # if we dont add sleep, only first page that will scraped
         yield {
             'title': article.xpath('./h1/text()').get(),
             'plot': article.xpath('./p/text()').get(),
